@@ -19,21 +19,30 @@
                 color: white; 
                 background-color: red; 
                 margin: 0;
-            } 
+            }
+            #troll {
+                padding: 20px;  
+                color: white; 
+                background-color: blue; 
+                margin: 0;
+            }  
         </style>
     </head>
     <body>
 
         <h1 id="header">Exercise 1</h1>
         
-        <div id="parent">
-            
+        <div id="parent">    
             <p>Parent Element</p>
               
-            <div id="child">Child Element</div>
-
+            <div id="child">
+                <p>Child Element</p>
+                <div id="troll">
+                    <p>I am trolling</p>
+                </div>
+            </div>
         </div>
-        
+        <p>When a event happens on a nested element it buuble upp all the way up to parent element triggering a event on all events on its way up</p>
         <script src="exercise1.js"></script>
     </body>
 </html>
